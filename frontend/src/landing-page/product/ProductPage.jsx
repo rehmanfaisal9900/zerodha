@@ -6,6 +6,8 @@ import Universe from "./Universe.jsx";
 import kite from "../../assets/images/kite.png";
 import cion from "../../assets/images/coin.png"
 import varsity from "../../assets/images/varsity.png"
+import console from "../../assets/images/console.png"
+import kiteconnect from "../../assets/images/kiteconnect.png"
 const ProductPage = () => {
   return (
     <>
@@ -19,7 +21,12 @@ const ProductPage = () => {
         googlePlay=""
         appStore=""
       />
-      <RightImage />
+      <RightImage 
+       imageUrl={console}
+        productName="Console"
+        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        learnMore=""
+        />
       <LeftImage
         imageUrl={cion}
         productName="cion"
@@ -29,7 +36,12 @@ const ProductPage = () => {
         googlePlay=""
         appStore=""
       />
-      <RightImage />
+      <RightImage 
+       imageUrl={kiteconnect}
+        productName="kite connect Api"
+        productDescription="Build robust trading applications and connect to our platforms using HTTP/JSON APIs. If you are a startup, build your fintech app and integrate with Zerodha ecosystem."
+        learnMore=""
+        />
       <LeftImage
         imageUrl={varsity}
         productName="Varsity Mobile"
@@ -39,6 +51,7 @@ const ProductPage = () => {
         googlePlay=""
         appStore=""
       />
+      <p className="text-center mt-2">Extend your trading and investment experience even further with our partner platforms</p>
       <Universe />
     </>
   );
